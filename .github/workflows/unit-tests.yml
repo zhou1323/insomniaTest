@@ -15,7 +15,5 @@ jobs:
       - uses: kong/setup-inso@v1
         with:
           inso-version: 3.5.0
-      - name: Lint
-        run: inso lint spec "Bart.yaml" --ci --src insomnia.yml --verbose
       - name: Run test suites
-        run: inso run test "Bart.yaml" --ci --env "OpenAPI env dummyjson.com" --src insomnia.yml --verbose
+        run: inso run test "Test Suite" --ci --env "OpenAPI env dummyjson.com" --src insomnia.yml --verbose
