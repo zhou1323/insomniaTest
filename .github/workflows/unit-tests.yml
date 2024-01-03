@@ -15,4 +15,5 @@ jobs:
       - uses: kong/setup-inso@v1
         with:
           inso-version: 3.5.0
-      - run: inso --version
+      - name: Run test suites
+        run: inso run test "Bart.yaml" --ci --env "Test Env" --src insomnia.json
