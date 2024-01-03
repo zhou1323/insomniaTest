@@ -16,4 +16,4 @@ jobs:
         with:
           inso-version: 3.5.0
       - name: Run test suites
-        run: inso run test "Test Suite" --ci --env "OpenAPI env dummyjson.com" --src insomnia.yml --verbose
+        run: inso run test "Test Suite" --ci --env "OpenAPI env dummyjson.com" --verbose
