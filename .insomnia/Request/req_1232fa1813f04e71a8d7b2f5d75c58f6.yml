@@ -1,0 +1,33 @@
+_id: req_1232fa1813f04e71a8d7b2f5d75c58f6
+type: Request
+parentId: fld_a56c4c3036154a64bb32e786bdaebac0
+modified: 1704293474144
+created: 1704293474144
+url: "{{ _.base_url }}/products/search"
+name: search products
+description: ""
+method: GET
+body: {}
+parameters:
+  - name: q
+    disabled: true
+    value: string
+  - name: limit
+    disabled: true
+    value: "0"
+  - name: skip
+    disabled: true
+    value: "0"
+  - name: select
+    disabled: true
+    value: string
+headers: []
+authentication: {}
+metaSortKey: -1704293474144
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

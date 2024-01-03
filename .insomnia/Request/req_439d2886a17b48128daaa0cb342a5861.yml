@@ -1,0 +1,36 @@
+_id: req_439d2886a17b48128daaa0cb342a5861
+type: Request
+parentId: fld_a56c4c3036154a64bb32e786bdaebac0
+modified: 1704312156662
+created: 1704293474142
+url: "{{ _.base_url }}/auth/products"
+name: get all products with auth
+description: ""
+method: GET
+body: {}
+parameters:
+  - name: limit
+    disabled: true
+    value: "0"
+  - name: skip
+    disabled: true
+    value: "0"
+  - name: select
+    disabled: true
+    value: string
+headers: []
+authentication:
+  type: apikey
+  disabled: false
+  key: Authorization
+  value: Bearer {% response 'body', 'req_cece73c3984c4106b56746d613596381',
+    'b64::JC50b2tlbg==::46b', 'always', 60 %}
+  addTo: header
+metaSortKey: -1704293474142
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

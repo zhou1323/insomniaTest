@@ -1,0 +1,30 @@
+_id: req_283bb21c91274aae9d93f6c240cd0ec0
+type: Request
+parentId: fld_45eec5eba5704590aba6b076059fc0af
+modified: 1704298445134
+created: 1704293474141
+url: "{{ _.base_url }}/auth/login"
+name: login and get token
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+      "username": "kminchelle",
+      "password": "0lelplR"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    disabled: false
+    value: application/json
+authentication: {}
+metaSortKey: -1704293474141
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

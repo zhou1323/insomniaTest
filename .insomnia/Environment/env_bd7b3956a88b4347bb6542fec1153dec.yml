@@ -1,0 +1,24 @@
+_id: env_bd7b3956a88b4347bb6542fec1153dec
+type: Environment
+parentId: env_1f57933e56706c6881859ecd2d07b60bb98b6734
+modified: 1704317484376
+created: 1704290876188
+name: OpenAPI env dummyjson.com
+data:
+  scheme: https
+  base_path: ""
+  host: dummyjson.com
+  base_url: https://dummyjson.com
+  product_id: "1"
+  GLOBAL_HEADERS: {}
+dataPropertyOrder:
+  "&":
+    - scheme
+    - base_path
+    - host
+    - base_url
+    - product_id
+    - GLOBAL_HEADERS
+color: null
+isPrivate: false
+metaSortKey: 1704290876188
