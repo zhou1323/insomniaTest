@@ -1,20 +1,21 @@
-name: Insomnia CI
+name: Test
 
 on:
   push:
-    branches:
-      - main
+    branches: [ "main" ]
   pull_request:
-    branches:
-      - main
+    branches: [ "main" ]
 
 jobs:
-  test:
+  Linux:
+    name: Validate API spec
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout branch
+        uses: actions/checkout@v1
       - uses: kong/setup-inso@v1
         with:
           inso-version: 3.5.0
+
       - name: Run test suites
-        working-directory: ./
-        run: inso run test "Test Suite" --ci --env "OpenAPI env dummyjson.com" --src insomnia.json
+        run: inso run test "Basic Suite" --ci --env "Test Env" --src insomnia.json
