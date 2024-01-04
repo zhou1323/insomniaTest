@@ -18,4 +18,4 @@ jobs:
           inso-version: 3.5.0
 
       - name: Run test suites
-        run: inso run test "Basic Suite" --ci --env "Test Env" --src insomnia.json
+        run: inso run test "Test Suite" --ci --env "Test Env" --src insomnia.json
